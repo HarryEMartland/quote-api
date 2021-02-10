@@ -1,16 +1,15 @@
-
-
 (async () => {
 
     const fs = require('fs').promises;
-    const quotes = require('./quotes.json')
+    const quotes = require('./quotes.json');
+    const BUILD_DIR = 'build';
 
-    await fs.mkdir('out')
+    await fs.mkdir(BUILD_DIR);
 
     const writeFiles = quotes.map((quote, i) => {
         const data = new Uint8Array(Buffer.from(JSON.stringify(quote)))
-        return fs.mkdir(`out/${i}`).then(()=>{
-            return fs.writeFile(`out/${i}/index.html`, data)
+        return fs.mkdir(`${BUILD_DIR}/${i}`).then(() => {
+            return fs.writeFile(`${BUILD_DIR}/${i}/index.html`, data)
         })
     })
 
@@ -19,6 +18,6 @@
     const data = new Uint8Array(Buffer.from(JSON.stringify({
         total: quotes.length
     })))
-    await fs.writeFile('out/index.html', data)
+    await fs.writeFile(`${BUILD_DIR}/index.html`, data)
 
 })().catch(console.error);
