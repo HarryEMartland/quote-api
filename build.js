@@ -22,4 +22,6 @@
     })))
     await fs.writeFile(`${BUILD_DIR}/index.html`, data)
 
+    await fs.copyFile('example.html', `${BUILD_DIR}/example.html`)
+
 })().catch(console.error);
