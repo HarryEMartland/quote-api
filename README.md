@@ -10,6 +10,7 @@ To get a random quote, first make a request to `/` then randomly chose an intege
 Then make a request to `/{number}` with the random number.
 
 CORs is enabled for GitHub pages so you can use this on your own webpages.
+An example can be found [here](https://harryemartland.github.io/quote-api/example.html).
 
 ### GET /
 
