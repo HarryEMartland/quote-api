@@ -9,6 +9,8 @@ Base URL: https://harryemartland.github.io/quote-api
 To get a random quote, first make a request to `/` then randomly chose an integer number within the range returned by `total`. 
 Then make a request to `/{number}` with the random number.
 
+CORs is enabled for GitHub pages so you can use this on your own webpages.
+
 ### GET /
 
 Returns information about the quotes in the 'database'

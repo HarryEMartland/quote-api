@@ -4,6 +4,8 @@
     const quotes = require('./quotes.json');
     const BUILD_DIR = 'build';
 
+    await fs.rmdir(BUILD_DIR, {recursive: true})
+
     await fs.mkdir(BUILD_DIR);
 
     const writeFiles = quotes.map((quote, i) => {
