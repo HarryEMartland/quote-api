@@ -13,5 +13,10 @@
     "quote": "One could even claim that without SLOs, there is no need for SREs.",
     "by": "Google SRE Workbook",
     "link": "https://sre.google/workbook/implementing-slos/"
+  },
+  {
+    "quote": "Only when the tide goes out do you discover who's been swimming naked.",
+    "by": "Warren Buffet",
+    "link":"https://www.buffettsbooks.com/"
   }
 ]
