@@ -18,5 +18,10 @@
     "quote": "Only when the tide goes out do you discover who's been swimming naked.",
     "by": "Warren Buffet",
     "link":"https://www.buffettsbooks.com/"
+  },
+  {
+    "quote": "There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors.",
+    "by":"@secretGeek",
+    "link":"https://twitter.com/secretGeek/status/7269997868",
   }
 ]
